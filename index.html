@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Users</title>
+    
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-layer-group brand-icon"></i>
+                <h2>AdminPanel</h2>
+            </div>
+            
+            <nav class="menu">
+                <a href="#" class="menu-item active">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Users</span>
+                </a>
+            </nav>
+
+            <div class="logout-section">
+                <a href="#" class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+     
+        <main class="main-content">
+            
+          
+            <header class="top-bar">
+                <div class="breadcrumbs">
+                    <span>Dashboard</span> <span class="current">Users</span>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">AD</div>
+                    <div class="user-info">
+                        <span class="name">Alex Morgan</span>
+                        <span class="role">Super Admin</span>
+                    </div>
+                </div>
+            </header>
+
+           
+            <section class="content-body">
+                <div class="page-title">
+                    <h1>Users Management</h1>
+                    <p>View, manage and update user information and employee salaries.</p>
+                </div>
+
+                
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>All Users <span id="usersCount" class="count-badge">0</span></h3>
+                    </div>
+
+                    <table class="users-table">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>ROLE</th>
+                                <th>EMAIL</th>
+                                <th>SALARY</th>
+                                <th>ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTableBody">
+                            
+                        </tbody>
+                    </table>
+
+                    
+                    <div class="table-footer">
+                        <button id="addUserBtn" class="add-user-btn">
+                            <i class="fa-solid fa-plus"></i> Add User
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

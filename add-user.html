@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-layer-group brand-icon"></i>
+                <h2>AdminPanel</h2>
+            </div>
+            
+            <nav class="menu">
+                <a href="index.html" class="menu-item active">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Users</span>
+                </a>
+            </nav>
+
+            <div class="logout-section">
+                <a href="#" class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+       
+        <main class="main-content">
+            
+      
+            <header class="top-bar">
+                <div class="breadcrumbs">
+                    <span>Dashboard</span>  <a href="index.html" style="text-decoration: none; color: inherit;">Users</a> &gt; <span class="current">Add New User</span>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">AD</div>
+                    <div class="user-info">
+                        <span class="name">Alex Morgan</span>
+                        <span class="role">Super Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            
+            <section class="content-body">
+                <div class="page-title">
+                    <h1>Add New User</h1>
+                    <p>Fill in the form below to create a new user account in the system.</p>
+                </div>
+
+                
+                <div class="form-card">
+                    <div class="form-section-title">
+                        <h3>User Details</h3>
+                        <p>Please provide the personal and employment information for the new user.</p>
+                    </div>
+
+                    <form id="addUserForm">
+                        <div class="form-grid">
+                            
+                           
+                            <div class="input-group full-width">
+                                <label for="fullName">Full Name *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-user"></i>
+                                    <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+                                </div>
+                                <span class="hint">Enter the first and last name of the employee</span>
+                            </div>
+
+                            
+                            <div class="input-group">
+                                <label for="userRole">Role / Position *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-id-badge"></i>
+                                    <select id="userRole" required>
+                                        <option value="" disabled selected>Select a role...</option>
+                                        <option value="Administrator">Administrator</option>
+                                        <option value="Senior Developer">Senior Developer</option>
+                                        <option value="UI/UX Designer">UI/UX Designer</option>
+                                        <option value="Project Manager">Project Manager</option>
+                                        <option value="Data Analyst">Data Analyst</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            
+                            <div class="input-group">
+                                <label for="userSalary">Salary (Annual) *</label>
+                                <div class="input-with-icon">
+                                    <span class="currency-sign">$</span>
+                                    <input type="text" id="userSalary" placeholder="e.g. $95,000 / yr" required>
+                                </div>
+                            </div>
+
+                           
+                            <div class="input-group full-width">
+                                <label for="userEmail">Email Address *</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <input type="email" id="userEmail" placeholder="e.g. john.doe@company.com" required>
+                                </div>
+                                <span class="hint">Company email address used for system login and notifications</span>
+                            </div>
+
+                        </div>
+
+                     
+                        <div class="form-actions">
+                            <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="save-user-btn">
+                                <i class="fa-solid fa-check"></i> Save User
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
